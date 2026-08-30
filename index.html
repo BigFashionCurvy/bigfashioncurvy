@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Big & Fashion Curvy | Tallas Extras</title>
+<meta name="description" content="Big & Fashion Curvy — moda para curvas extraordinarias.">
+<style>
+:root{--red:#e50914;--yellow:#f6c400;--pink:#fff1f4;--black:#111;--gray:#666}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:#fff}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:4px solid var(--yellow);display:flex;align-items:center;justify-content:space-between;padding:10px 5%;gap:15px}
+header img{height:62px;width:auto;max-width:180px;object-fit:contain}.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{color:#111;text-decoration:none;font-weight:700;font-size:14px;padding:8px 10px}
+.btn{display:inline-block;background:var(--red);color:#fff!important;text-decoration:none;border:0;border-radius:999px;padding:12px 18px;font-weight:800;cursor:pointer}
+.hero{background:linear-gradient(135deg,#fff1f4,#fff);padding:48px 6%;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px}
+.hero h1{font-size:clamp(38px,7vw,72px);line-height:.95;margin:0 0 16px;text-transform:uppercase}
+.hero h1 span{color:var(--red)} .hero p{font-size:20px;color:var(--gray);max-width:560px}
+.hero img{width:100%;max-width:430px;display:block;margin:auto;border-radius:24px}
+section{padding:42px 6%;max-width:1250px;margin:auto}.section-title{font-size:32px;margin:0 0 20px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filters button{border:2px solid #111;background:#fff;border-radius:999px;padding:9px 15px;font-weight:700;cursor:pointer}.filters button.active{background:#111;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid #eee;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 5px 18px rgba(0,0,0,.06)}
+.card .pic{height:260px;background:var(--pink);display:flex;align-items:center;justify-content:center;color:#999;font-weight:700;text-align:center;padding:20px;object-fit:cover;overflow:hidden}
+.card .pic img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:15px}.cat{font-size:12px;text-transform:uppercase;color:var(--red);font-weight:800}.name{font-size:18px;font-weight:800;margin:5px 0}.price{font-size:22px;font-weight:900;margin:8px 0}.sizes{font-size:13px;color:var(--gray);margin-bottom:12px}.sold{background:#eee;color:#777!important;cursor:not-allowed}
+.info{background:#111;color:#fff;border-radius:24px;padding:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.info h3{margin-top:0;color:var(--yellow)} 
+.info a{color:var(--yellow);text-decoration:none}
+.info a:hover{text-decoration:underline}
+footer{background:#111;color:#fff;text-align:center;padding:28px 6%;margin-top:30px}
+.small{font-size:13px;color:#888}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero img{max-width:300px}.grid{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:1fr}}
+@media(max-width:520px){header img{height:50px;max-width:135px}.nav a:not(.btn){display:none}.hero{padding:35px 5%}.grid{gap:10px}.card .pic{height:190px}.card .body{padding:12px}.section-title{font-size:27px}}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.jpg" alt="Big & Fashion Curvy">
+  <nav class="nav">
+    <a href="#catalogo">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn" id="topWhatsApp" href="#" target="_blank">Grupo WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p style="font-weight:800;color:#e50914;text-transform:uppercase">Tallas extras • Moda curvy</p>
+    <h1>Viste tus curvas <span>con orgullo</span> 👑</h1>
+    <p>Encuentra prendas que te hagan sentir increíble. Consulta nuestro catálogo y únete a nuestro grupo de WhatsApp para apartar tu favorita.</p>
+    <a class="btn" href="#catalogo">VER CATÁLOGO</a>
+  </div>
+  <img src="logo.jpg" alt="Big & Fashion Curvy">
+</section>
+
+<section id="catalogo">
+  <h2 class="section-title">✨ Catálogo</h2>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+  <p class="small">Los productos y precios se actualizan desde el archivo <b>products.csv</b>.</p>
+</section>
+
+<section id="contacto">
+  <div class="info">
+    <div>
+      <h3>📲 WhatsApp</h3>
+      <p>Únete a nuestro grupo y haz tu pedido o pregunta por disponibilidad.</p>
+      <a class="btn" id="wa2" href="#" target="_blank">UNIRME AL GRUPO</a>
+    </div>
+    <div>
+      <h3>📍 Ubicación</h3>
+      <p><b>Calle Próceres #2241</b><br>Colonia Simón Bolívar<br>Monterrey, N.L.</p>
+      <p style="font-size:12px;margin-top:10px"><b>Horarios:</b><br>Lunes: Cerrado<br>Mar-Sáb: 11:00 AM - 7:00 PM<br>Domingo: 9:00 AM - 5:00 PM</p>
+    </div>
+    <div>
+      <h3>📸 Redes Sociales</h3>
+      <p>Síguenos para ver más estilos y novedades.</p>
+      <p style="font-size:13px">
+        <a href="https://www.instagram.com/bigfashion.curvy" target="_blank">Instagram</a> •
+        <a href="https://www.tiktok.com/@big.fashion.curvy" target="_blank">TikTok</a>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© Big & Fashion Curvy · Tallas Extras</footer>
+
+<script>
+const WHATSAPP_GROUP = "https://chat.whatsapp.com/DkPuHepHkPE5byHVK4vLub?s=cl&p=i&mlu=0";
+
+document.getElementById("topWhatsApp").href = WHATSAPP_GROUP;
+document.getElementById("wa2").href = WHATSAPP_GROUP;
+
+let products = [];
+let selected = "Todos";
+
+function money(v){return "$"+Number(v).toLocaleString("es-MX")+" MXN"}
+
+function render(){
+  const cats=["Todos",...new Set(products.map(p=>p.categoria).filter(Boolean))];
+  const filters=document.getElementById("filters");
+  filters.innerHTML=cats.map(c=>`<button class="${c===selected?'active':''}" onclick="selected='${c.replaceAll("'","&#39;")}';render()">${c}</button>`).join("");
+  const shown=selected==="Todos"?products:products.filter(p=>p.categoria===selected);
+  const grid=document.getElementById("grid");
+  grid.innerHTML=shown.map(p=>{
+    const sold=p.estado.toLowerCase()!=="disponible";
+    const link=WHATSAPP_GROUP;
+    return `<article class="card">
+      <div class="pic">${p.imagen?`<img src="${p.imagen}" alt="${p.nombre}">`:'📷<br>Foto disponible pronto'}</div>
+      <div class="body">
+        <div class="cat">${p.categoria}</div><div class="name">${p.nombre}</div>
+        <div class="price">${money(p.precio)}</div>
+        <div class="sizes">Talla: ${p.tallas}<br><b>${p.estado}</b></div>
+        <a class="btn ${sold?'sold':''}" href="${sold?'#':link}" target="_blank">${sold?'AGOTADO':'PEDIR'}</a>
+      </div>
+    </article>`;
+  }).join("");
+}
+fetch("products.csv").then(r=>r.text()).then(text=>{
+  const rows=text.trim().split(/\r?\n/).slice(1).map(line=>{
+    const a=line.split(",");
+    return {id:a[0],nombre:a[1],categoria:a[2],precio:a[3],tallas:a[4],estado:a[5],imagen:a[6]||""};
+  });
+  products=rows; render();
+}).catch(()=>{document.getElementById("grid").innerHTML="<p>No se pudo cargar el catálogo. Abre la página desde un servidor (por ejemplo GitHub Pages).</p>"});
+</script>
+</body>
+</html>
