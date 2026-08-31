@@ -1,1 +1,1 @@
-![Big & Fashion Tallas Extras Curvy Logo](logo.png)
+![Big & Fashion Tallas Extras Curvy Logo](logo circular.PNG)
